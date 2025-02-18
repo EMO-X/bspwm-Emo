@@ -1,0 +1,24 @@
+#! /bin/sh
+
+#####
+Mod4
+
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc config border_width         4
+bspc config window_gap          10
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      false
+bspc config border_radius 0
+
+
+
+##start up
+sxhkd -c /home/emo-x/.config/bspwm/sxhkd/sxhkdrc &
+nitrogen --restore &
+picom --experimental-backends --backend glx --blur-method dual_kawase --blur-strength 3 & 
+
+
