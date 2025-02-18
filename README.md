@@ -4,7 +4,7 @@ My config files of bspwm
 ### Install bspwm
 ```bash
 sudo apt install  bspwm
-sudo apt install sxhkd x11-xserver-utils libx11-dev libxcb1-dev rofi feh
+sudo apt install sxhkd x11-xserver-utils libx11-dev libxcb1-dev rofi nitrogen
 ```
 ### Create Configuration Files and Folders
 ```bash
